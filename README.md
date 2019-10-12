@@ -76,4 +76,8 @@ https://github.com/kesalin/OpenGLES/blob/master/Tutorial13/Tutorial13-Stencil%20
 Tutorial14: Cubemap Texture
 https://github.com/kesalin/OpenGLES/blob/master/Tutorial14/Tutorial14-TextureCube.png
 
+-------------------------------------------------------------------------
+Fix:
 
+1.library not found for -lstdc++
+https://github.com/devdawei/libstdc-
