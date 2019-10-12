@@ -21,6 +21,11 @@
     self.glView = [[OpenGLView alloc] initWithFrame:screenBounds];
     [self.window addSubview:self.glView];
     
+    UIViewController* viewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
+    viewController.view = self.glView;
+
+    [self.window setRootViewController:viewController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
