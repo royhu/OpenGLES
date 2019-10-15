@@ -1,113 +1,119 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JaY-4F-IY0"/>
+                        <viewControllerLayoutGuide type="bottom" id="eX8-bC-vfq"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="bWP-S3-R1m" customClass="OpenGLView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="218"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bWP-S3-R1m" customClass="OpenGLView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="424"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="qHu-Zq-o4K">
-                                <rect key="frame" x="0.0" y="218" width="320" height="242"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHu-Zq-o4K">
+                                <rect key="frame" x="0.0" y="654" width="414" height="242"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LX:" lineBreakMode="tailTruncation" minimumFontSize="10" id="TvU-Ba-NUk">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="LX:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TvU-Ba-NUk">
                                         <rect key="frame" x="168" y="108" width="26" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LY:" lineBreakMode="tailTruncation" minimumFontSize="10" id="QEz-dl-IiO">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="LY:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-dl-IiO">
                                         <rect key="frame" x="169" y="137" width="26" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LZ:" lineBreakMode="tailTruncation" minimumFontSize="10" id="W08-mg-Iue">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="LZ:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="W08-mg-Iue">
                                         <rect key="frame" x="168" y="166" width="25" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DR:" lineBreakMode="tailTruncation" minimumFontSize="10" id="9aP-mT-F3f">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="DR:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9aP-mT-F3f">
                                         <rect key="frame" x="168" y="26" width="30" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DG:" lineBreakMode="tailTruncation" minimumFontSize="10" id="bgb-Ta-NTB">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="DG:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-Ta-NTB">
                                         <rect key="frame" x="168" y="54" width="31" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DB:" lineBreakMode="tailTruncation" minimumFontSize="10" id="K33-0y-cMl">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="DB:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="K33-0y-cMl">
                                         <rect key="frame" x="168" y="83" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="-10" maxValue="10" id="AWB-qH-tJv">
-                                        <rect key="frame" x="203" y="108" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="-10" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="AWB-qH-tJv">
+                                        <rect key="frame" x="205" y="108" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="lightXSliderValueChanged:" destination="2" eventType="valueChanged" id="t5t-Dh-766"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="-10" maxValue="10" id="tw3-MY-L9L">
-                                        <rect key="frame" x="203" y="137" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="-10" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="tw3-MY-L9L">
+                                        <rect key="frame" x="205" y="137" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="lightYSliderValueChanged:" destination="2" eventType="valueChanged" id="vFU-sc-Q4S"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="-1" maxValue="10" id="eCI-Iy-f5Z">
-                                        <rect key="frame" x="203" y="166" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="-1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="eCI-Iy-f5Z">
+                                        <rect key="frame" x="205" y="166" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="lightZSliderValueChanged:" destination="2" eventType="valueChanged" id="mKy-P6-I1T"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="6hE-Li-fqR">
-                                        <rect key="frame" x="204" y="26" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6hE-Li-fqR">
+                                        <rect key="frame" x="206" y="26" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="diffuseRSliderValueChanged:" destination="2" eventType="valueChanged" id="aDo-yr-3cF"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="KcS-zg-rMn">
-                                        <rect key="frame" x="205" y="54" width="104" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KcS-zg-rMn">
+                                        <rect key="frame" x="207" y="54" width="100" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="diffuseGSliderValueChanged:" destination="2" eventType="valueChanged" id="lkK-2G-mh3"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="06j-M9-pzh">
-                                        <rect key="frame" x="204" y="82" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="06j-M9-pzh">
+                                        <rect key="frame" x="206" y="82" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="diffuseBSliderValueChanged:" destination="2" eventType="valueChanged" id="5Gg-OL-Iaf"/>
                                         </connections>
                                     </slider>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Xk3-G0-Af3">
-                                        <rect key="frame" x="168" y="195" width="138" height="44"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xk3-G0-Af3">
+                                        <rect key="frame" x="168" y="195" width="138" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <segments>
                                             <segment title="Ball"/>
@@ -117,117 +123,117 @@
                                             <action selector="segmentSelectionChanged:" destination="2" eventType="valueChanged" id="yrz-vL-fQx"/>
                                         </connections>
                                     </segmentedControl>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Shininess:" lineBreakMode="tailTruncation" minimumFontSize="10" id="wgk-bJ-42K">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Shininess:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wgk-bJ-42K">
                                         <rect key="frame" x="11" y="195" width="90" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="50" id="5dl-9o-UOs">
-                                        <rect key="frame" x="41" y="217" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="5dl-9o-UOs">
+                                        <rect key="frame" x="43" y="217" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="shininessSliderValueChanged:" destination="2" eventType="valueChanged" id="Hmz-y3-c3S"/>
                                         </connections>
                                     </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AR:" lineBreakMode="tailTruncation" minimumFontSize="10" id="XGs-Sb-CJh">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="AR:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="XGs-Sb-CJh">
                                         <rect key="frame" x="12" y="26" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AG:" lineBreakMode="tailTruncation" minimumFontSize="10" id="Ed1-GV-Vjb">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="AG:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ed1-GV-Vjb">
                                         <rect key="frame" x="12" y="54" width="30" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AB:" lineBreakMode="tailTruncation" minimumFontSize="10" id="TKk-Pm-iKm">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="AB:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TKk-Pm-iKm">
                                         <rect key="frame" x="12" y="83" width="28" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="HQs-3l-l7D">
-                                        <rect key="frame" x="46" y="26" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HQs-3l-l7D">
+                                        <rect key="frame" x="48" y="26" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="ambientRSliderValueChanged:" destination="2" eventType="valueChanged" id="gqD-HN-xaK"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="lIl-eg-PbI">
-                                        <rect key="frame" x="46" y="54" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lIl-eg-PbI">
+                                        <rect key="frame" x="48" y="54" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="ambientGSliderValueChanged:" destination="2" eventType="valueChanged" id="fN2-aN-Om0"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="aVh-dT-Y4a">
-                                        <rect key="frame" x="46" y="83" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aVh-dT-Y4a">
+                                        <rect key="frame" x="48" y="83" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="ambientBSliderValueChanged:" destination="2" eventType="valueChanged" id="7e7-sx-m6J"/>
                                         </connections>
                                     </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="L: light A: ambient D: diffuse S: specular" lineBreakMode="tailTruncation" minimumFontSize="10" id="R1x-5K-Oem">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="L: light A: ambient D: diffuse S: specular" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="R1x-5K-Oem">
                                         <rect key="frame" x="6" y="0.0" width="320" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="highlightedColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="shadowColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SR:" lineBreakMode="tailTruncation" minimumFontSize="10" id="P1H-4a-Tb9">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="SR:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="P1H-4a-Tb9">
                                         <rect key="frame" x="12" y="108" width="29" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SG:" lineBreakMode="tailTruncation" minimumFontSize="10" id="ahs-oE-Q6w">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="SG:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ahs-oE-Q6w">
                                         <rect key="frame" x="12" y="137" width="30" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SB:" lineBreakMode="tailTruncation" minimumFontSize="10" id="yYE-OH-8fA">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="SB:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yYE-OH-8fA">
                                         <rect key="frame" x="12" y="166" width="28" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="zqG-Xe-UkR">
-                                        <rect key="frame" x="46" y="108" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zqG-Xe-UkR">
+                                        <rect key="frame" x="48" y="108" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="specularRSliderValueChanged:" destination="2" eventType="valueChanged" id="lvj-kU-Tn1"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="IW6-rM-Px4">
-                                        <rect key="frame" x="46" y="137" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IW6-rM-Px4">
+                                        <rect key="frame" x="48" y="137" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="specularGSliderValueChanged:" destination="2" eventType="valueChanged" id="7nT-rf-Gnl"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="yDY-jF-CPK">
-                                        <rect key="frame" x="41" y="166" width="105" height="23"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yDY-jF-CPK">
+                                        <rect key="frame" x="43" y="166" width="101" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="specularBSliderValueChanged:" destination="2" eventType="valueChanged" id="3e6-NM-pKr"/>
                                         </connections>
                                     </slider>
                                 </subviews>
-                                <color key="backgroundColor" red="0.83903203940000004" green="0.91288630660000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.83903203940000004" green="0.91288630660000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="ambientBSlider" destination="aVh-dT-Y4a" id="cgf-Bo-Wvn"/>
@@ -246,50 +252,9 @@
                         <outlet property="specularRSlider" destination="zqG-Xe-UkR" id="GuS-Lf-7Qc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34" y="31"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="OpenGLView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OpenGLView.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="ambientBSliderValueChanged:"/>
-                <relationship kind="action" name="ambientGSliderValueChanged:"/>
-                <relationship kind="action" name="ambientRSliderValueChanged:"/>
-                <relationship kind="action" name="diffuseBSliderValueChanged:"/>
-                <relationship kind="action" name="diffuseGSliderValueChanged:"/>
-                <relationship kind="action" name="diffuseRSliderValueChanged:"/>
-                <relationship kind="action" name="lightXSliderValueChanged:"/>
-                <relationship kind="action" name="lightYSliderValueChanged:"/>
-                <relationship kind="action" name="lightZSliderValueChanged:"/>
-                <relationship kind="action" name="segmentSelectionChanged:"/>
-                <relationship kind="action" name="shininessSliderValueChanged:"/>
-                <relationship kind="action" name="specularBSliderValueChanged:"/>
-                <relationship kind="action" name="specularGSliderValueChanged:"/>
-                <relationship kind="action" name="specularRSliderValueChanged:"/>
-                <relationship kind="outlet" name="ambientBSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="ambientGSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="ambientRSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="diffuseBSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="diffuseGSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="diffuseRSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="lightXSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="lightYSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="lightZSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="openGLView" candidateClass="OpenGLView"/>
-                <relationship kind="outlet" name="shininessSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="specularBSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="specularGSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="specularRSlider" candidateClass="UISlider"/>
-            </relationships>
-        </class>
-    </classes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
 </document>
