@@ -81,3 +81,6 @@ Fix:
 
 1.library not found for -lstdc++
 https://github.com/devdawei/libstdc-
+
+2.'string' file not found
+https://github.com/DeCori/Xcode9-cpp
