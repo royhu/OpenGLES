@@ -243,6 +243,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 21B77C261684A679006B1D9B;
@@ -361,6 +362,7 @@
 		21B77C501684A67A006B1D9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial10/Tutorial10-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial10/Tutorial10-Info.plist";
@@ -372,6 +374,7 @@
 		21B77C511684A67A006B1D9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial10/Tutorial10-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial10/Tutorial10-Info.plist";
